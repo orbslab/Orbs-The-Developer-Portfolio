@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="utf-8">
+    <meta name="description" content="Orbs Protfolio">
+    <meta name="keywords" content="Orbs, Protfolio, Developer, Blog">
+    <meta name="author" content="OrbsLab">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Blog DashBoard</title>
+
+	<link rel="stylesheet" href="css/blog-dashboard.css">
+	<link rel="stylesheet" href="css/animate.css/animate.min.css">
+    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/quill.css">
+
+</head>
+
+<body>
+	   
+	<div class="container row">
+    	<div class="col-sm-3 col-xl-3">
+    		<nav class="navbar">
+	            <div class="sidenav">
+	                <p class="brand">Orbs</p>
+	                <div class="social-link">
+	                	<a href="blog.html">Home</a>
+		              	<a href="#">Add</a>
+		              	<a href="#">Edit</a>
+		              	<a href="#">Delete</a>
+		              	<a href="#" class="comment">Comments <span class="badge badge-pill badge-danger">4</span></a>
+	                </div>  				
+	            </div>
+	        </nav>
+    	</div>
+    	
+		<!-- Write Blog -->
+		<div class="col-sm-9 col-xl-9 blogwbox">
+			<div id="toolbar" class="toolbar"></div>
+			<div id="editor">
+				You can start writing here
+			</div><br>
+			<button class="btn btn-warning" id="onDiscard">Discard</button>
+			<button class="btn btn-danger disabled" id="onDelete">Delete</button>
+			<button class="btn btn-primary" id="onPreview">Preview</button>
+			<button class="btn btn-success" id="onSave">Save</button>
+		</div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/quill.js"></script>
+	<script src="js/blogDashboard-main.js"></script>
+
+</body>
+</html>

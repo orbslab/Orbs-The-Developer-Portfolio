@@ -1,0 +1,35 @@
+.details p{
+	margin-bottom: -5px;
+	text-align: left;
+}
+
+.details,
+.empty, 
+.message{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.message{
+	margin-left: -5em;
+}
+
+.details{
+	border-right: 1px solid black;
+	padding-left: -45em;
+	background-color: #fdfff4;
+}
+
+.end{
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+.lastMsg{
+	text-align: justify;
+}
+
+.goToTOC{
+	margin-bottom: 2em;
+}

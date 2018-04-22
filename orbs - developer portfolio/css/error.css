@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+}
+
+.main{
+	background-image: url(../image/search02.jpg);
+	height: 100vh;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-family: serif;
+    padding-top: 6em;
+    
+}
+
+.main h1{
+	font-size: 20vw;
+	font-weight: bolder;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 50px;
+}
+
+.main h4{
+	font-size: 4vw;
+	margin-top: -6vw;
+	/*padding-top: 0;*/
+}
+
+.errorButton{
+	color: #fff !important;
+    border-color: #fff !important;
+    font-size: 2.5vw !important;
+    margin-top: 2.5vw;
+    font-weight: bold !important
+}
+
+.errorButton:hover {
+	background-color: #fff !important;
+	color: #000 !important;
+	font-weight: bold !important;
+}
+@media only screen and (max-width: 1024px) and (min-width: 280px){
+	.main{
+		
+	}
+	.main h1 {
+		font-size: 20vw;
+		margin-bottom: 20px;
+	}
+	.main h4 {
+		font-size: 5vh;
+	}
+	.errorButton{
+		font-size: 4vw !important;
+	}
+
+}

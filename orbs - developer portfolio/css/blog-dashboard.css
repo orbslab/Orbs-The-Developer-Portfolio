@@ -1,0 +1,184 @@
+#toolbar{
+  margin-top: 20px;
+}
+
+#editor{
+  height: 500px;
+}
+
+.brand {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+}
+
+.sidenav {
+  height: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: #4a0472;
+  overflow-x: hidden;
+  padding: 35px;
+}
+
+.sidenav .social-link a {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .social-link a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+  background: rgba(0,0,0,.4);
+  border: 1px solid #000;
+}
+.sidenav .social-link a:focus {
+  color: red;
+  text-decoration: none;
+}
+
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: -35px 0 0 -35px;
+  border: 5px solid white;
+  border-radius: 50%;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+#loader1 {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: -20px 0 0 -20px;
+  border: 5px solid white;
+  border-radius: 50%;
+  border-top: 5px solid #4a0472;
+  border-bottom: 5px solid #4a0472;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin2 2s linear infinite;
+  animation: spin2 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin2 {
+  0% { -webkit-transform: rotateX(0deg); }
+  100% { -webkit-transform: rotateX(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes spin2 {
+  0% { transform: rotateX(0deg); }
+  100% { transform: rotateX(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+  display: none;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0; } 
+  to { bottom:0px; opacity:1; }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0; } 
+  to{ bottom:0; opacity:1; }
+}
+
+@media only screen and (min-width: 2500px){
+  .navbar .icon-link a{
+    font-size: 200%;
+    /*margin-right: 150px;*/
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .social-link a{
+    font-size: 45px !important;
+  }
+
+  .blogwbox{
+    margin-left: 550px;
+  }
+
+  #toolbar{
+    margin-top: 50px;
+    font-size: 150%;
+  }
+  #editor{
+    height: 300%;
+    font-size: 250%;
+  }
+
+  .blogwbox button{
+    font-size: 200%;
+    border-radius: 20px;
+  }
+  .blogwbox button .btn{
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 575px) and (min-width: 200px){
+  .sidenav{
+    position: relative;
+    width: 100%;
+    /*height: 130px;*/
+    margin-top: 20px;
+    list-style: none;
+    text-align: center;
+    padding: 5px !important;
+  }
+  .social-link a{
+    float: left;
+    margin-right: 15px;
+    margin-left: 5px;
+  }
+  .icon-link{
+    margin-top: 180px;
+  }
+  .comment{
+    display: none !important;
+  }
+
+}
+@media only screen and (max-width: 992px) and (min-width: 576px){
+  .blogwbox{
+    margin-left: 200px;
+    margin-right: 100px !important;
+    min-width: 100% !important;
+
+
+  }
+}
